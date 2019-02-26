@@ -3,6 +3,8 @@ const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const cssnano = require("gulp-cssnano");
 const browsersync = require("browser-sync").create();
+const plumber = require("gulp-plumber");
+
 // BrowserSync
 function browserSync(done) {
   browsersync.init({
@@ -22,6 +24,7 @@ function browserSyncReload(done) {
 function css() {
   return gulp
     .src("dev/scss/**/*.scss")
+    .pipe(plumber())
     .pipe(sass())
     .pipe(
       autoprefixer(["last 15 versions", "> 1%", "ie 8", "ie 7"], {
