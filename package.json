@@ -1,0 +1,24 @@
+{
+  "name": "gulp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xxmorata/gulp.git",
+  "author": "Dev <xvmorata@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-node": "^8.0.1",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-sass": "^4.0.2"
+  }
+}
